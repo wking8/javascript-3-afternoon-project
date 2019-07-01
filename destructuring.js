@@ -93,7 +93,10 @@ function totalPopulation(obj) {
   Find the smallest number of the three and return that number.
 */
 
-//Code Here
+function largeNumbers( { first, second, third } ) {
+
+}
+
 
 
 
@@ -105,6 +108,19 @@ function totalPopulation(obj) {
   Find the longest array and return that array.
 */
 
-//Code Here
+function numberGroups( { a, b, c } ) {
+  const arr = [a, b, c]
+  const tooLongFoo = []
+  
+  arr.forEach( (arr, i) => {
+    if (arr.length > tooLongFoo.length) {
+      tooLongFoo.push(arr[i]);
+    }
+  })
+  
+  return tooLongFoo;
+}
+
+
 
 
