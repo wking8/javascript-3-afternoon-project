@@ -33,8 +33,8 @@ const {color: color, make: make, model: model, year: year} = carDetails;
 */
 
 function greeting( obj ) {
-  //Code Here
-  
+ const { firstName, lastName, title } = obj  
+
   // Do not edit the code below.
   return 'Hello, ' + title + ' ' + firstName + ' ' + lastName + '!';
   // Do not edit the code above.
@@ -52,8 +52,10 @@ function greeting( obj ) {
   Sum up the values and return the total number.
 */
 
-//Code Here
-
+function totalPopulation(obj) {
+  const { utah, california, texas, arizona } = obj
+  return utah + california + texas + arizona
+}
 
 
 ////////// PROBLEM 4 //////////
@@ -66,7 +68,14 @@ function greeting( obj ) {
   Push these new variables to an array and return the array. 
 */
 
-//Code Here
+  const ingredients = (obj) => {
+  const newArray = [];
+  const { carb, fat, protein } = obj;
+  for (var key in obj){
+    newArray.push(obj[key])
+  }
+  return newArray;
+}
 
 
 
